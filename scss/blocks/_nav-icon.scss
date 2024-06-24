@@ -1,0 +1,87 @@
+/* Nav Icon */
+/* Стили для кнопки мобильной навигации */
+.mobile-nav-btn {
+  /* Определение переменных для удобства */
+  --time: 0.2s;
+  --width: 30px;
+  --height: 30px;
+  --line-height: 3px;
+  --spacing: 5px;
+  --color: #ffffff;
+  --radius: 4px;
+
+  /* Вычисление высоты и ширины на основе переменных */
+  height: calc(var(--line-height) * 3 + var(--spacing) * 2);
+  width: var(--width);
+
+  /* Центрирование содержимого */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Установка уровня наложения и скрытие по умолчанию */
+  z-index: 999;
+  display: none;
+}
+
+/* Стили для иконки навигации */
+.nav-icon {
+  /* Позиционирование и размеры */
+  position: relative;
+  width: var(--width);
+  height: var(--line-height);
+
+  /* Цвет фона и скругление углов */
+  background-color: var(--color);
+  border-radius: var(--radius);
+}
+
+/* Стили для псевдоэлементов ::before и ::after */
+.nav-icon::before,
+.nav-icon::after {
+  /* Создание псевдоэлементов */
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+
+  /* Размеры, скругление углов и цвет фона */
+  width: var(--width);
+  height: var(--line-height);
+  border-radius: var(--radius);
+  background-color: var(--color);
+
+  /* Анимация при изменении */
+  transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+}
+
+/* Позиционирование псевдоэлементов */
+.nav-icon::before {
+  top: calc(-1 * (var(--line-height) + var(--spacing)));
+}
+
+.nav-icon::after {
+  top: calc(var(--line-height) + var(--spacing));
+}
+
+/* Стили при активации иконки навигации */
+.nav-icon.nav-icon--active {
+  /* Изменение цвета фона */
+  background-color: transparent;
+}
+
+/* Изменение позиции и вращение псевдоэлементов при активации */
+.nav-icon.nav-icon--active::before,
+.nav-icon.nav-icon--active::after {
+  top: 0;
+  transition: top var(--time) linear, transform var(--time) ease-in var(--time);
+}
+
+/* Вращение псевдоэлементов при активации */
+.nav-icon.nav-icon--active::before {
+  transform: rotate(45deg);
+}
+
+.nav-icon.nav-icon--active::after {
+  transform: rotate(-45deg);
+}

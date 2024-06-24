@@ -1,0 +1,34 @@
+.carousel {
+	position: relative;
+	width: 80%;
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.carousel-track-container {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.carousel-track {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+	padding: 0 10px;
+	min-width: 33.333%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.carousel-slide img {
+	width: 100%;
+	max-width: 200px;
+	max-height: 150px;
+	display: block;
+}

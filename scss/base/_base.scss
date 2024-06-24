@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  /* outline: 1px solid green !important; */
+}
+
+html {
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+  background-color: var(--silver);
+}
+
+body {
+  position: relative;
+  margin: 0;
+  color: var(--concrete);
+  font-family: var(--font-main);
+  text-wrap: balance;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: var(--firefly);
+}
+
+code {
+  background-color: #e9f1f6;
+  padding: 0.2rem;
+  border-radius: 4px;
+}
+
+pre.code {
+  overflow-x: auto;
+  background-color: #e9f1f6;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.flex {
+  display: flex;
+}
+
+section {
+  padding: 5px 0;
+}
+
+/* Контейнеры */
+.container {
+  margin: 0 auto;
+  padding-top: 70px;
+  padding: 0 var(--container-padding);
+
+  max-width: var(--container-width);
+  width: 100%;
+}
+
+.wrapper {
+  padding: var(--wrapper-padding);
+}
+
+.none {
+  display: none !important;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}

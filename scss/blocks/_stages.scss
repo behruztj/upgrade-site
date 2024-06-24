@@ -1,0 +1,73 @@
+.stages__heading {
+	margin-bottom: clamp(20px, 4.17vw, 60px);
+	font-size: clamp(24px, 2.5vw, 36px);
+	font-weight: 600;
+	color: var(--scorpion);
+}
+
+.stages__wrapper {
+	padding: 20px 15px 20px 15px;
+	border-radius: var(--radius);
+	background-color: var(--concrete);
+}
+
+.stages__list {
+	flex-wrap: wrap;
+	gap: var(--gap);
+	--offsets: 2;
+}
+
+.stages__item {
+	position: relative;
+	width: calc((100% - var(--gap) * var(--offsets)) / (var(--offsets) + 1));
+	padding: 50px 20px 20px;
+	border-radius: var(--radius);
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.stages__span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 15px 0 0 20px;
+	font-size: clamp(18px, 1.46vw, 21px);
+	font-weight: 600;
+	color: var(--scorpion);
+}
+
+.stages__title {
+	margin: 0 0 10px 0;
+	font-size: clamp(18px, 1.46vw, 21px);
+	font-weight: 600;
+	color: var(--scorpion);
+}
+
+.stages__desc {
+	font-size: clamp(14px, 1.11vw, 16px);
+	font-weight: 600;
+	color: var(--scorpion);
+}
+
+.sbg-1 {
+	background: linear-gradient(250deg, rgba(255, 255, 255, 0.3), #ffffff 100%),
+		url('../image/stages/stages-1.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.sbg-2 {
+	background: linear-gradient(250deg, rgba(255, 255, 255, 0.3), #ffffff 100%),
+		url('../image/stages/stages-2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.sbg-3 {
+	background: linear-gradient(250deg, rgba(255, 255, 255, 0.3), #ffffff 100%),
+		url('../image/stages/stages-3.jpeg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}

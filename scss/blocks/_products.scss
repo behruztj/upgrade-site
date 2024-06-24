@@ -1,0 +1,134 @@
+.products__wrapper {
+  flex-direction: column;
+  align-items: center;
+}
+
+.products__list-cards {
+  flex-wrap: wrap;
+  gap: var(--gap);
+  margin: 0 auto;
+  padding-bottom: clamp(20px, 3.47vw, 50px);
+  --offsets: 1;
+}
+
+.cards__card {
+  padding: 10px;
+  width: calc((100% - var(--gap) * var(--offsets)) / (var(--offsets) + 1));
+  background-color: var(--concrete);
+  border-radius: clamp(10px, 1.39vw, 20px);
+}
+
+.card__image {
+  max-width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__img {
+  border-radius: var(--radius);
+}
+
+.hidden {
+  display: none;
+}
+
+.card__info-wrapper {
+  flex-direction: column;
+  align-items: start;
+  flex: 1 0 0;
+  max-width: 50%;
+  padding: 10px;
+}
+
+.info-wrapper__title {
+  margin-bottom: 15px;
+  font-size: clamp(16px, 1.67vw, 24px);
+  font-weight: 600;
+  color: var(--scorpion);
+}
+
+.title__span {
+  margin-bottom: 15px;
+  font-size: clamp(14px, 1.25vw, 18px);
+  font-weight: 500;
+  color: var(--scorpion);
+}
+
+.info-wrapper__desc {
+  margin-bottom: 15px;
+  font-size: clamp(12px, 1.11vw, 16px);
+  font-weight: 300;
+  color: var(--scorpion);
+}
+
+.info-wrapper__button {
+  margin-top: auto;
+  padding: 8px 6%;
+  font-size: clamp(12px, 1.11vw, 16px);
+  border-radius: 20px;
+  color: var(--concrete);
+  background-color: var(--scorpion);
+  transition: 0.3s ease-in-out;
+}
+
+.info-wrapper__button:hover {
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 1));
+}
+
+.info-wrapper__button:focus {
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0));
+}
+
+.info-wrapper__button:focus-visible {
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 1));
+}
+
+.info-wrapper__button:active {
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 1));
+}
+
+.wrapper__button-show-more {
+  padding: 10px 5%;
+  font-size: clamp(12px, 1.11vw, 16px);
+  font-weight: 400;
+  color: var(--concrete);
+  border-radius: 20px;
+  background-color: var(--scorpion);
+  transition: 0.3s ease-in-out;
+}
+
+.wrapper__button-show-more:hover {
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 1));
+}
+
+.wrapper__button-show-more:focus {
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0));
+}
+
+.wrapper__button-show-more:focus-visible {
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 1));
+}
+
+.wrapper__button-show-more:active {
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 1));
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

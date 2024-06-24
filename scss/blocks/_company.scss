@@ -1,0 +1,69 @@
+.company__wrapper {
+	flex-wrap: wrap;
+	gap: clamp(10px, 1.39vw, 20px);
+	width: 100%;
+	--offsets: 0;
+}
+
+.company__left {
+	width: calc((100% - 20px * var(--offsets)) / (var(--offsets) + 1));
+	background-color: var(--concrete);
+	border-radius: Var(--radius);
+}
+
+.company__heading {
+	margin-bottom: 20px;
+	font-size: clamp(20px, 1.74vw, 25px);
+	font-weight: 500;
+	color: var(--scorpion);
+}
+
+.company__desc {
+	font-size: clamp(14px, 1.11vw, 16px);
+	font-weight: 400;
+	color: var(--scorpion);
+}
+
+.company__right {
+	width: calc((100% - 30px * var(--offsets)) / (var(--offsets) + 1));
+	gap: 20px;
+}
+
+.company__img {
+	width: 50%;
+	border-radius: 20px;
+	background-image: url('../image/company/123.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.company__list {
+	width: 50%;
+	padding: 20px 30px 20px 30px;
+	background-color: var(--concrete);
+	border-radius: var(--radius);
+}
+
+.company__item {
+	padding: 10px 0 10px 0;
+	color: var(--scorpion);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.company__title {
+	width: 97%;
+	font-size: clamp(14px, 1.11vw, 16px);
+	font-weight: 600;
+}
+
+.company__span {
+	display: block;
+	font-size: clamp(20px, 1.74vw, 25px);
+	font-weight: 900;
+}
+
+.company__descr {
+	font-size: clamp(12px, 0.97vw, 14px);
+	font-weight: 400;
+}
